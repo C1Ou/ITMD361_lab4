@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<form method="POST" action="lab4formscript.php">
+	<form action="lab4formscript.php" method="POST">
 		<h1>Volunteer Form</h1>
 		<fieldset>
 			<legend>My Info</legend>
@@ -22,7 +22,20 @@
 			<div>
 				<label>Email Address:<input type="email" name="email_field" placeholder="email here"></label>
 			</div>
+			<div>
+				<label>Gender:</label>
+				<label>Male<input type="radio" name="gender_field" value="M" id="male"></label>
+				<label>Female<input type="radio" name="gender_field" value="F" id="Female"></label>
+			</div>
+			<div>
+				<label>Age:</label>
+				<select id="age" name="age_field">
+					<option value="under 18" selected>under 18</option>
+					<option value="18-24">18-24</option>
+				</select>
+			</div>
 		</fieldset>
+
 	</form>
 
 
